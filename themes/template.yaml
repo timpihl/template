@@ -5,3 +5,5 @@
 
 Template:
   primary-color: "#228B22"
+  # Header
+  header-height: 48px
