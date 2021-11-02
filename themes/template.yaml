@@ -8,4 +8,20 @@ Template:
   # Header
   header-height: 48px
   # Transparent popup
-  mdc-theme-surface: transparent
+  card-mod-theme: Dark Blue Glass
+  card-mod-more-info-yaml: |
+    $: |
+      .mdc-dialog .mdc-dialog__scrim {
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: rgba(0,0,0,0.1);
+      } 
+      .mdc-dialog .mdc-dialog__container .mdc-dialog__surface {
+        box-shadow: none !important;
+        background: none;
+        border-radius: var(--ha-card-border-radius);
+      }
+    .: |
+      :host {
+        --ha-card-box-shadow: none;
+      }
